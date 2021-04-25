@@ -3,3 +3,89 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    background:hsl(233, 47%, 7%);
+    font-size: 15px;
+    font-family: 'Inter', 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+
+span:nth-child(n+2) {
+    display: inline-block;
+    color:  hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: smaller;
+    letter-spacing: 1.5px;
+    margin: 0.5rem;
+}
+
+p {
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+main {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 98.8%;
+    width: 100%;
+    background-color: hsl(277, 100%, 61%);
+    mix-blend-mode: multiply;
+    border-radius: 10px 10px 0 0;
+}
+
+.header, .overlay {
+    opacity: .8;
+}
+
+.header_image {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+li:nth-child(n+2) {
+    margin-top: 1rem;
+}
+
+.stats_card{
+    margin:0 3rem;
+    background: hsl(244, 38%, 16%);
+    border-radius: 10px;
+}
+
+.stats_copy{
+    padding: 2em;
+}
+
+.stats_component {
+    padding-bottom: 2em;
+}
