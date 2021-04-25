@@ -49,9 +49,9 @@ main {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 98.8%;
+    height: 98.5%;
     width: 100%;
-    background-color: hsl(277, 100%, 61%);
+    background-color: hsl(277, 100%, 63%);
     mix-blend-mode: multiply;
     border-radius: 10px 10px 0 0;
 }
@@ -63,6 +63,7 @@ main {
 .header_image {
     border-radius: 10px 10px 0 0;
     width: 100%;
+    height: 100%;
 }
 
 li {
@@ -88,4 +89,68 @@ li:nth-child(n+2) {
 
 .stats_component {
     padding-bottom: 2em;
+}
+
+
+@media only screen and (min-width: 550px) {
+    .stats_card {
+        margin: 0 5rem;
+    }
+}
+
+
+@media only screen and (min-width: 650px) {
+    .overlay {
+        height : 99.2%;
+    }
+
+    .stats_card {
+        margin: 0 8rem;
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+    .overlay {
+        height : 99.4%;
+    }
+
+    .stats_card {
+        margin: 0 15rem;
+    }
+}
+
+@media only screen and (min-width: 1320px){
+
+  .stats_card {
+      width: 80%;
+      margin: 0;
+      display: flex;
+      flex-direction: row-reverse;
+  }
+  
+  img {
+      display: none;
+  }
+  
+  .overlay {
+      height: 100%;
+      border-radius: 0 10px 10px 0;
+  }
+
+  .header {
+      background: url(./images/image-header-desktop.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 0 10px 10px 0;
+  }
+
+  .stats {
+      padding: 3em;
+  }
+
+  .stats_copy {
+      text-align: left;
+  }
+
 }
